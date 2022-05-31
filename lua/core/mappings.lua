@@ -175,4 +175,7 @@ vim.cmd [[
   augroup END
 ]]
 
+-- copy to system clipboard
+map("v", "<C-c>", "<esc>:'<,'>w !clip.exe<cr><CR>", opts)
+
 return M
